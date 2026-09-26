@@ -1,0 +1,12 @@
+{
+  "name": "ddd-layers-examples",
+  "private": true,
+  "scripts": {
+    "dev:example_1": "pnpm --filter example_1 dev",
+    "dev:example_2": "pnpm --filter example_2 dev",
+    "build:example_1": "pnpm --filter example_1 build",
+    "build:example_2": "pnpm --filter example_2 build",
+    "build": "pnpm build:example_1 && pnpm build:example_2",
+    "lint": "pnpm -r lint"
+  }
+}
